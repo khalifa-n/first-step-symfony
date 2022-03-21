@@ -1,0 +1,612 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+@import "compass/reset";
+@import "partials/variable";
+
+*{
+  box-sizing: border-box;
+}
+ .login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: $fontsize;
+  }
+  .container-login{
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #485E80 ;
+    width: 400px;
+  }
+  .div-top-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-blue;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+    color: $white;
+  }
+ 
+  .form{
+    padding: 60px 40px ;
+  }
+
+  .form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+ .form-control input{
+   background-color: $light-blue;
+  border: 4px solid $light-blue;
+  border-radius: 50px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: $font;
+  font-size: $fontsize;
+
+  
+
+ }
+ .form-control input:focus{
+  outline: 0;
+  border-color:$dark-blue;
+}
+.form-control ion-icon{
+  position: absolute;
+}
+.i{
+  padding: 10px;
+            color: $black;
+            min-width: 50px;
+            text-align: center;
+}
+
+ .btn{
+   width: 100%;
+   border-radius: 50px;
+   border: 4px solid $dark-blue;
+   display: block;
+   padding: 10px;
+   background-color: $dark-blue;
+   color: $white;
+   font-family: $font;
+   font-size: $fontsize;
+  
+ }
+
+ 
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1868AE;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: $font;
+  font-size: $fontsize;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #818181;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.menuSelect{
+  border: 2px solid $light-blue ;
+  border-radius: 0;
+  height: 45px;
+  background-color: $light-blue;
+  width: 90%;
+  text-align: center;
+  font-family: $font;
+  font-size: $fontsize;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+//tabltrr
+
+th{
+  border: solid #1868AE;
+  border-collapse: collapse;
+  background-color: #1868AE;
+  color: white;
+  text-align: center;
+  font-family: $font;
+  font-size: $fontsize;
+
+}
+tr{
+  border-collapse: collapse;
+  background-color: #C6D7EB;
+  color: black;
+  text-align: center;
+  font-family: $font;
+  font-size: $fontsize;
+
+}
+tr:nth-child(even) {
+  background-color: #abbdff;
+}
+td{
+  text-align: center;
+
+}
+  /* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "partials/variable";
+
+*{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+ .login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  }
+  .container-login{
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #485E80 ;
+    width: 400px;
+  }
+  .div-top-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-blue;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+    color: $white;
+  }
+ 
+  .form{
+    padding: 60px 40px ;
+    font-family: $font;
+  }
+
+  .form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: $font;
+    font-size: $fontsize;
+  }
+  
+ .form-control input{
+   background-color: $light-blue;
+  border: 4px solid $light-blue;
+  border-radius: 50px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+ }
+ .form-control input:focus{
+  outline: 0;
+  border-color:$dark-blue;
+}
+.form-control ion-icon{
+  position: absolute;
+}
+.i{
+  padding: 10px;
+            color: $black;
+            min-width: 50px;
+            text-align: center;
+}
+
+ .btn{
+   width: 100%;
+   border-radius: 50px;
+   border: 4px solid $dark-blue;
+   display: block;
+   padding: 10px;
+   background-color: $dark-blue;
+   color: $white;
+  
+ }
+
+ 
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1868AE;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidebar a:hover {
+  color: #818181;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+//tabltrr
+
+th{
+  border: solid #1868AE;
+  border-collapse: collapse;
+  background-color: #1868AE;
+  color: white;
+  text-align: center;
+  padding: 11px;
+
+}
+ 
+table{
+  width: 100%;
+}
+
+.openbtn{
+  background-color: #C6D7EB;
+  color: #111;
+}
+//ajout etudiant
+.container-etudiant{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10% 10% 1%;
+  width: 100%;
+  flex-direction: column;
+
+}
+.accrocheur{
+  background-color: $dark-blue;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  height:100px ;
+
+  
+
+}
+h1{
+  background-color: $dark-blue;
+  color: $white;
+  width: 70%;
+  height:100px ;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ // padding: 20px 10px 30px 10px; 
+  font-size: 30px;
+  font-family: $font;
+  font-size: $fontsize;
+ // border-radius: 30px;
+ 
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px #485E80 ;
+  height:450px ;
+ // background-color: #111;
+  
+}
+.etu{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding:5% 0 2% 0 ;
+  background-color:$white;
+  justify-content: center;
+  height: 400px;
+}
+
+.parent{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding:5% 0 2% 0 ;
+  background-color:$white;
+  justify-content: center;
+
+}
+.fils1,.fils2{
+  display: flex;
+  width:50% ;
+  background-color :$white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: auto;
+  font-family: $font;
+  font-size: $fontsize;
+}
+.fils2{
+  background-color: $white;
+  
+}
+.petitfils {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  width: 80%;
+  margin: 5%;
+  font-family: $font;
+  font-size: $fontsize;
+}
+.petitfils input{
+  border: 2px solid $light-blue ;
+  border-radius: 30px;
+  height: 45px;
+  background-color: $light-blue;
+  width: 70%;
+  text-align: center;
+}
+select{
+  border: 2px solid $light-blue ;
+  border-radius: 30px;
+  height: 45px;
+  background-color: $light-blue;
+  width: 70%;
+  text-align: center;
+  font-family: $font;
+  font-size: $fontsize;
+}
+
+
+.valider{
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: $dark-blue;
+  border-radius: 30px;
+  height: 45px;
+  border: $dark-blue ;
+  color: $white;
+  font-family: $font;
+  font-size: $fontsize;
+}
+
+
+.openbtn{
+  background-color: #C6D7EB;
+  color: #111;
+}
+//ajout etudiant
+
+h1{
+  background-color: $dark-blue;
+  color: $white;
+  width: 70%;
+  height:70px ;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px 30px 10px; 
+  font-size: 30px;
+  font-family: $font;
+  font-size: $fontsize;
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.parent{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding:5% 0 2% 0 ;
+  background-color:$white;
+  justify-content: center;
+}
+.fils1,.fils2{
+  display: flex;
+  width:50% ;
+  background-color :$white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: auto;
+}
+.fils2{
+  background-color: $white;
+}
+.petitfils {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  width: 80%;
+  margin: 5%;
+}
+
+.petitfils input{
+  border: 2px solid $light-blue ;
+  border-radius: 30px;
+  height: 45px;
+  background-color: $light-blue;
+  width: 70%;
+  text-align: center;
+}
+
+.valider{
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: $dark-blue;
+  border-radius: 30px;
+  height: 45px;
+  border: $dark-blue ;
+  color: $white;
+}
+#adresse,#chambre,#bourse{
+  display: none;
+}
+.edit{
+  background-color: #D9A5B3;
+ // height:30px;
+  width: 30px;
+justify-content: center;
+align-items: center;
+}
+.ion{
+  height: 20px;
+  width: 20px;
+
+}
+
+.contaner{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.list{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+
+}
+.sel{
+  width: 30%;
+  background-color:#C6D7EB;
+  margin: 20px;
+}
+
+.ok{
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  background-color: $dark-blue;
+  border-radius: 30px;
+  height: 45px;
+  border: $dark-blue ;
+  color: $white;
+  font-family: $font;
+  font-size: $fontsize;
+}
+.filtreForm{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:50px ;
+ box-shadow: 0 10px 20px #ffffff ;
+ margin-bottom: 20px;
+ 
+}
+

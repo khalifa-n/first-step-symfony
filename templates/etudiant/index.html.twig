@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+   {{parent()}} 
+
+{% block etudiant %}
+<body>
+<div class="container-etudiant">
+        <h1 class="accrocheur">Ajouter etudiant</h1>
+        <form method="post" action="<?=WEBROOT."Etudiant/insertEtudiant"?>" >
+        <div class=" etu ">
+                <div class="fils1"> 
+                    <div class="petitfils">
+                        <label for="nom"></label>
+                        <input  type="text" name="nom" placeholder="nom">
+                        <?php if(isset($arrErrors["nom"])):?>
+                            <small><?=$arrErrors["nom"]?></small>
+                        <?php endif ?>
+
+                    </div>
+                    <div class="petitfils">
+                        <label for="prenom"></label>
+                        <input  type="text" name="prenom" placeholder="prenom">
+                        <?php if(isset($arrErrors["prenom"])):?>
+                            <small><?= $arrErrors["prenom"]  ?></small>
+                        <?php endif ?>
+                        
+                    </div>
+                   
+                    <div class="petitfils">
+                        <label for="email"></label>
+                        <input  type="text" name="email" placeholder="email">
+                        <?php if(isset($arrErrors["email"])):?>
+                            <small><?= $arrErrors["email"]?></small>
+                        <?php endif ?>
+                    </div>
+                    <div class="petitfils">
+                        <label for="telephone"></label>
+                        <input  type="text" name="telephone" placeholder="telephone">
+                        <?php if(isset($arrErrors["telephone"])):?>
+                            <small><?= $arrErrors["telephone"]  ?></small>
+                        <?php endif ?>
+                    </div>
+                   
+                    
+                </div>
+                <div class="fils2"> 
+               
+                <div class="petitfils">
+                        <label for="date"></label>
+                        <input  type="date" name="date" placeholder="date de naissance">
+                        <?php if(isset($arrErrors["date"])):?>
+                            <small><?= $arrErrors["date"]  ?></small>
+                        <?php endif ?>
+                    </div>
+                    <div  class="petitfils">
+                <select id="select" name="choisir type d'etudiant" > 
+                <option value="choisir">choisir type d'etudiant</option>
+                <option  value="nonBoursier"> non boursier</option>
+                <option  value="boursier">boursier non logé</option>
+                <option  value="boursierLoge">boursier logé</option>
+            </select>
+            </div> 
+                    <div class="petitfils" id="adresse" >
+                        <label  for="adresse"></label>
+                        <input  type="text" name="adresse" placeholder="adresse">
+                        <?php if(isset($arrErrors["adresse"])):?>
+                            <small><?= $arrErrors["adresse"]  ?></small>
+                        <?php endif ?>
+                     </div>
+                    <div class="petitfils" id="chambre">
+                        <label for="chambre"></label>
+                        <input  type="text" name="chambre" placeholder="chambre">
+                        <?php if(isset($arrErrors["chambre"])):?>
+                            <small><?= $arrErrors["chambre"]  ?></small>
+                        <?php endif ?>
+                    </div>
+                    <div class="petitfils" id="bourse">
+                        <label for="bourse"></label>
+                        <input  type="text" name="bourse" placeholder="bourse">
+                        <?php if(isset($arrErrors["bourse"])):?>
+                            <small><?= $arrErrors["bourse"]  ?></small>
+                        <?php endif ?>
+                     </div>
+                  
+                </div>
+         </div>
+         <button type="submit" class="valider">valider</button>
+        </form>
+    </div> 
+
+{% endblock %}
+{% endblock %}

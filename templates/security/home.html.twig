@@ -1,0 +1,45 @@
+ {% extends "base.html.twig" %}
+{% block body %}
+<body class="login">
+  <div class="container-login">
+        <div class="div-top-form"><h2 class="text-login">Login form</h2></div>
+
+        <form method="post" class="form" id="form" action="<?=WEBROOT."security/seConnecter"?> 
+
+        <?php if(isset($arrErrors['connexion'])): ?>
+    <div class="alert alert-danger" role="alert">
+       <strong> <?=$arrErrors['connexion']?></strong>
+    </div>
+   <?php endif ?>
+
+            <div class="form-control" id="form-control">
+                <label for="login"></label>
+                <ion-icon class="i" name="person-outline"></ion-icon>
+                <input class="input-icon" type="text" name="login">
+                <?php if(isset($arrErrors['login'])): ?>
+
+          <small id="emailHelp"  class="form-text text-danger"><?=$arrErrors['login']?></small>
+        <?php endif ?>
+                <small></small>
+            </div>
+
+            <div class="form-control" id="form-control">
+                 <label for="password"></label>
+                 <ion-icon class="i" name="lock-closed-outline"></ion-icon>
+                 <input input-icon type="password" name="password"> 
+                 <?php if(isset($arrErrors['password'])): ?>
+          <small id="emailHelp"  class="form-text text-danger"><?=$arrErrors['password']?></small>
+        <?php endif ?>
+                 <small></small>
+                 
+            </div>
+            <button class="btn">submit</button>
+
+        </form>
+    </div>
+
+          {% endblock %}
+
+  
+
+ 

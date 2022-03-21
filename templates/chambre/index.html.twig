@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ChambreController!{% endblock %}
+
+{% block body %}
+   {{parent()}} 
+
+
+{% block chambre %}
+<body>
+  <form class="filtreForm" method="$_POST">
+<div class="contaner">
+       <div class="list"> 
+           <select class="sel" name="pavillon" id="">
+           <option value="">pavillon</option>
+           <?php foreach($pavillons as $pavillon):  ?>
+           <option value="<?=$pavillon->id_pavillon?>"><?= $pavillon->numero?></option>
+           <?php endforeach ?>
+               <option value="">b</option>    
+           </select>
+           <button type="submit" name="filtre" class="ok">ok</button>
+
+       </div>
+   </div>
+   </form>
+<table>
+  <tr>
+    <th>Noumero chambre</th>
+    <th>numero etage</th>
+    <th>type chambre</th>
+    <th>pavillon</th> 
+    <th>modifier</th>
+
+
+  </tr>
+  
+  <?php foreach ($chambres as $chambre):?>
+  <tr>
+    <td><?=$chambre->numero_chambre?></td>
+    <td><?=$chambre->numero_etage?></td>
+    <td><?=$chambre->type_chambre?></td>
+     <td><?=$chambre->pavillon?></td> 
+    <td><a href="<?=WEBROOT."Chambre/edit/".$chambre->id_chambre?>"><span class="edit">
+      <ion-icon class="ion" name="create-outline"></ion-icon></span></a></td>
+  </tr>
+<?php endforeach ?>   
+
+{% endblock %}
+{% endblock %}

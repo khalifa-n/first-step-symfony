@@ -1,0 +1,756 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap");
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/screen.scss */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 22, ../sass/screen.scss */
+.container-login {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #485E80;
+  width: 400px;
+}
+
+/* line 28, ../sass/screen.scss */
+.div-top-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1868AE;
+  height: 80px;
+  border-radius: 10px 10px 0 0;
+  color: #FFFFFF;
+}
+
+/* line 38, ../sass/screen.scss */
+.form {
+  padding: 60px 40px;
+}
+
+/* line 42, ../sass/screen.scss */
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+/* line 48, ../sass/screen.scss */
+.form-control input {
+  background-color: #C6D7EB;
+  border: 4px solid #C6D7EB;
+  border-radius: 50px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 62, ../sass/screen.scss */
+.form-control input:focus {
+  outline: 0;
+  border-color: #1868AE;
+}
+
+/* line 66, ../sass/screen.scss */
+.form-control ion-icon {
+  position: absolute;
+}
+
+/* line 69, ../sass/screen.scss */
+.i {
+  padding: 10px;
+  color: #000000;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* line 76, ../sass/screen.scss */
+.btn {
+  width: 100%;
+  border-radius: 50px;
+  border: 4px solid #1868AE;
+  display: block;
+  padding: 10px;
+  background-color: #1868AE;
+  color: #FFFFFF;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 91, ../sass/screen.scss */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1868AE;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 106, ../sass/screen.scss */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 115, ../sass/screen.scss */
+.sidebar a:hover {
+  color: #818181;
+}
+
+/* line 119, ../sass/screen.scss */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* line 127, ../sass/screen.scss */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+/* line 136, ../sass/screen.scss */
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* line 140, ../sass/screen.scss */
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  /* line 147, ../sass/screen.scss */
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  /* line 148, ../sass/screen.scss */
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+/* line 150, ../sass/screen.scss */
+.menuSelect {
+  border: 2px solid #C6D7EB;
+  border-radius: 0;
+  height: 45px;
+  background-color: #C6D7EB;
+  width: 90%;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+
+/* line 164, ../sass/screen.scss */
+th {
+  border: solid #1868AE;
+  border-collapse: collapse;
+  background-color: #1868AE;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 174, ../sass/screen.scss */
+tr {
+  border-collapse: collapse;
+  background-color: #C6D7EB;
+  color: black;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 183, ../sass/screen.scss */
+tr:nth-child(even) {
+  background-color: #abbdff;
+}
+
+/* line 186, ../sass/screen.scss */
+td {
+  text-align: center;
+}
+
+ /* Welcome to Compass.
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 198, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* line 202, ../sass/screen.scss */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 210, ../sass/screen.scss */
+.container-login {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #485E80;
+  width: 400px;
+}
+
+/* line 216, ../sass/screen.scss */
+.div-top-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1868AE;
+  height: 80px;
+  border-radius: 10px 10px 0 0;
+  color: #FFFFFF;
+}
+
+/* line 226, ../sass/screen.scss */
+.form {
+  padding: 60px 40px;
+  font-family: "Roboto Condensed";
+}
+
+/* line 231, ../sass/screen.scss */
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 239, ../sass/screen.scss */
+.form-control input {
+  background-color: #C6D7EB;
+  border: 4px solid #C6D7EB;
+  border-radius: 50px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 251, ../sass/screen.scss */
+.form-control input:focus {
+  outline: 0;
+  border-color: #1868AE;
+}
+
+/* line 255, ../sass/screen.scss */
+.form-control ion-icon {
+  position: absolute;
+}
+
+/* line 258, ../sass/screen.scss */
+.i {
+  padding: 10px;
+  color: #000000;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* line 265, ../sass/screen.scss */
+.btn {
+  width: 100%;
+  border-radius: 50px;
+  border: 4px solid #1868AE;
+  display: block;
+  padding: 10px;
+  background-color: #1868AE;
+  color: #FFFFFF;
+}
+
+/* line 278, ../sass/screen.scss */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1868AE;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* line 291, ../sass/screen.scss */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 301, ../sass/screen.scss */
+.sidebar a:hover {
+  color: #818181;
+}
+
+/* line 305, ../sass/screen.scss */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* line 313, ../sass/screen.scss */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+/* line 322, ../sass/screen.scss */
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* line 326, ../sass/screen.scss */
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  /* line 333, ../sass/screen.scss */
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  /* line 334, ../sass/screen.scss */
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+/* line 338, ../sass/screen.scss */
+th {
+  border: solid #1868AE;
+  border-collapse: collapse;
+  background-color: #1868AE;
+  color: white;
+  text-align: center;
+  padding: 11px;
+}
+
+/* line 348, ../sass/screen.scss */
+table {
+  width: 100%;
+}
+
+/* line 352, ../sass/screen.scss */
+.openbtn {
+  background-color: #C6D7EB;
+  color: #111;
+}
+
+/* line 357, ../sass/screen.scss */
+.container-etudiant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10% 10% 1%;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* line 366, ../sass/screen.scss */
+.accrocheur {
+  background-color: #1868AE;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  height: 100px;
+}
+
+/* line 376, ../sass/screen.scss */
+h1 {
+  background-color: #1868AE;
+  color: #FFFFFF;
+  width: 70%;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 391, ../sass/screen.scss */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px #485E80;
+  height: 450px;
+}
+
+/* line 402, ../sass/screen.scss */
+.etu {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding: 5% 0 2% 0;
+  background-color: #FFFFFF;
+  justify-content: center;
+  height: 400px;
+}
+
+/* line 412, ../sass/screen.scss */
+.parent {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding: 5% 0 2% 0;
+  background-color: #FFFFFF;
+  justify-content: center;
+}
+
+/* line 421, ../sass/screen.scss */
+.fils1, .fils2 {
+  display: flex;
+  width: 50%;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: auto;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 432, ../sass/screen.scss */
+.fils2 {
+  background-color: #FFFFFF;
+}
+
+/* line 436, ../sass/screen.scss */
+.petitfils {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  width: 80%;
+  margin: 5%;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 446, ../sass/screen.scss */
+.petitfils input {
+  border: 2px solid #C6D7EB;
+  border-radius: 30px;
+  height: 45px;
+  background-color: #C6D7EB;
+  width: 70%;
+  text-align: center;
+}
+
+/* line 454, ../sass/screen.scss */
+select {
+  border: 2px solid #C6D7EB;
+  border-radius: 30px;
+  height: 45px;
+  background-color: #C6D7EB;
+  width: 70%;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 466, ../sass/screen.scss */
+.valider {
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: #1868AE;
+  border-radius: 30px;
+  height: 45px;
+  border: #1868AE;
+  color: #FFFFFF;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 480, ../sass/screen.scss */
+.openbtn {
+  background-color: #C6D7EB;
+  color: #111;
+}
+
+/* line 486, ../sass/screen.scss */
+h1 {
+  background-color: #1868AE;
+  color: #FFFFFF;
+  width: 70%;
+  height: 70px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px 30px 10px;
+  font-size: 30px;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 499, ../sass/screen.scss */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 506, ../sass/screen.scss */
+.parent {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 5% 0 2% 0;
+  background-color: #FFFFFF;
+  justify-content: center;
+}
+
+/* line 514, ../sass/screen.scss */
+.fils1, .fils2 {
+  display: flex;
+  width: 50%;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: auto;
+}
+
+/* line 523, ../sass/screen.scss */
+.fils2 {
+  background-color: #FFFFFF;
+}
+
+/* line 526, ../sass/screen.scss */
+.petitfils {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  width: 80%;
+  margin: 5%;
+}
+
+/* line 535, ../sass/screen.scss */
+.petitfils input {
+  border: 2px solid #C6D7EB;
+  border-radius: 30px;
+  height: 45px;
+  background-color: #C6D7EB;
+  width: 70%;
+  text-align: center;
+}
+
+/* line 544, ../sass/screen.scss */
+.valider {
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: #1868AE;
+  border-radius: 30px;
+  height: 45px;
+  border: #1868AE;
+  color: #FFFFFF;
+}
+
+/* line 554, ../sass/screen.scss */
+#adresse, #chambre, #bourse {
+  display: none;
+}
+
+/* line 557, ../sass/screen.scss */
+.edit {
+  background-color: #D9A5B3;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 564, ../sass/screen.scss */
+.ion {
+  height: 20px;
+  width: 20px;
+}
+
+/* line 570, ../sass/screen.scss */
+.contaner {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 579, ../sass/screen.scss */
+.list {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 586, ../sass/screen.scss */
+.sel {
+  width: 30%;
+  background-color: #C6D7EB;
+  margin: 20px;
+}
+
+/* line 592, ../sass/screen.scss */
+.ok {
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  background-color: #1868AE;
+  border-radius: 30px;
+  height: 45px;
+  border: #1868AE;
+  color: #FFFFFF;
+  font-family: "Roboto Condensed";
+  font-size: 1.1em;
+}
+
+/* line 604, ../sass/screen.scss */
+.filtreForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0 10px 20px #ffffff;
+  margin-bottom: 20px;
+}
